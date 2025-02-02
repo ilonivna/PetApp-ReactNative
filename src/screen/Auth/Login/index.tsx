@@ -11,6 +11,7 @@ import {
   View,
 } from 'react-native';
 import styles from './styles';
+import {HidePassIcon, ViewPassIcon} from '../../../assets/icons';
 
 interface IInputValues {
   email: string;
@@ -71,9 +72,8 @@ export default function LoginPage() {
         <KeyboardAvoidingView
           keyboardVerticalOffset={Platform.select({android: 20, ios: 90})}
           behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
-          <Text style={styles.welcomeText}>Hello, world!</Text>
           <View style={styles.titleCont}>
-            <Text style={styles.title}>Welcome, a fellow pet lover!</Text>
+            <Text style={styles.title}>Welcome, {'\n'}a fellow pet lover!</Text>
             <Text style={styles.welcomeText}>
               Every human deserves a pet. We will help you find a fluffy friend.
             </Text>
@@ -119,12 +119,8 @@ export default function LoginPage() {
                 onPress={() => {
                   setIsPassHidden(!isPassHidden);
                 }}
-                style={{
-                  width: 30,
-                  height: 30,
-                  backgroundColor: isPassHidden ? 'green' : 'red',
-                }}
               />
+              {isPassHidden ? <ViewPassIcon /> : <HidePassIcon />}
             </View>
             {inputValues.errorPassword && (
               <Text style={{color: 'red'}}>{inputValues.errorPassword}</Text>

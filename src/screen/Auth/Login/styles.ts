@@ -1,4 +1,5 @@
 import {Platform, StyleSheet} from 'react-native';
+import {fonts} from '../../../constant/fonts';
 
 export default StyleSheet.create({
   mainWrapper: {
@@ -7,10 +8,12 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    fontSize: 24,
+    fontSize: 34,
+    fontFamily: fonts.MontserratBlack,
   },
   welcomeText: {
     fontSize: 18,
+    fontFamily: fonts.MontserratRegular,
   },
   btnContainer: {
     flexDirection: 'row',
