@@ -1,7 +1,8 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useEffect} from 'react';
 import {DevSettings, NativeModules, SafeAreaView} from 'react-native';
-import LoginPage from './src/screen/Auth/Login';
+
+import RootNavigation from './src/navigation';
 
 function App(): React.JSX.Element {
   useEffect(() => {
@@ -17,7 +18,7 @@ function App(): React.JSX.Element {
   console.log('Hello devtools!');
   return (
     <SafeAreaView style={{flex: 1}}>
-      <LoginPage />
+      <RootNavigation/>
     </SafeAreaView>
   );
 }

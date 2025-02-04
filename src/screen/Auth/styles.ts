@@ -1,5 +1,5 @@
 import {Platform, StyleSheet} from 'react-native';
-import {fonts} from '../../../constant/fonts';
+import {fonts} from '../../constant/fonts';
 
 export default StyleSheet.create({
   mainWrapper: {
@@ -68,7 +68,30 @@ export default StyleSheet.create({
     alignItems: 'center',
     marginTop: 40,
   },
+  formContainer: {
+    marginTop: 28,
+    marginBottom: 68,
+  },
   letsgoText: {
     color: 'white',
+  },
+  activeTab: {
+    alignItems: 'center',
+    backgroundColor: '#F8F8F9',
+    padding: 10,
+    borderRadius: 20,
+    flex: 1,
+  },
+  authText: {
+    color: '#0B0B0B',
+    fontSize: 14,
+    fontFamily: fonts.MontserratRegular,
+  },
+  disabledTab: {
+    alignItems: 'center',
+    padding: 10,
+    borderRadius: 20,
+    flex: 1,
+    opacity: 0.7,
   },
 });
