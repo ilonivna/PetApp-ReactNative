@@ -16,7 +16,7 @@ export default function AuthHeader({activeTab}: IAuthHeader) {
     navigation.navigate(ScreenNames.LOGIN_PAGE);
   };
 
-  const navigateToRegister = () => {navigation.navigate(ScreenNames.REGISTRATION_PAGE)};
+  const navigateToRegister = () => {navigation.navigate(ScreenNames.REGISTRATION_PAGE);};
   ;
 
   return (

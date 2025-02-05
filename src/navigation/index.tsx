@@ -17,5 +17,5 @@ export default function RootNavigation() {
 
             </Stack.Navigator>
         </NavigationContainer>
-    )
+    );
 }

@@ -39,7 +39,7 @@ export default function LoginPage() {
     }
   };
 
-  const checkPwd = (text) => {
+  const checkPwd = (text: string | any[]) => {
     if (text.length < 8) {
       handleChangeInput(
         'errorPassword',
